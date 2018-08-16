@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: rgb(2, 75, 75);
+    text-align: center;
+}
+
+h2{
+    color: aquamarine;
+}
+
+p{
+    color: aliceblue;
+}
+
+ul{
+    color: aqua;
+}
+
+table{
+    color: azure;
+    border-style: double;
+}
+
+pre{
+    color: bisque;
+}

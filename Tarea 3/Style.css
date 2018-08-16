@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+h2{
+    color: aliceblue;
+}
+
+img{
+    width: 10em;
+    height: 14em;
+}
+
+#logo{
+    width: 7em;
+    height: 4em;
+}
