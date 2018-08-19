@@ -1,0 +1,64 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* Pegada al desplazar: position: sticky; */
+    /* Fija arriba */
+    position: initial; 
+    top: 0; /* O abajo: bottom: 0 */
+    height: 3em;
+  }
+  
+  .menu { float: left;} /* Cada elemento flota a la izquierda */
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  #image2{
+      margin: 1em;
+  }
+
+  video{
+      margin: 0;
+      background-color: black;
+  }
+  
+  h1{
+      margin: 0%;
+      background-color: black;
+      text-align: center;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  p{
+      text-align: justify;
+  }
+  
+  #image{
+      float: right;
+      margin: 1em;
+      width: 50%;
+      height: 50%;
+  }
+
+  tr:nth-child(even) {
+    background-color: black;
+    color: white;
+}
+
+  #friends{
+      margin: 0;
+      width: 9em;
+      height: 3em;
+  }
+
+  li a:hover{
+    background-color: black;
+    color:white;
+  }
