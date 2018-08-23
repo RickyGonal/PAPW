@@ -1,0 +1,17 @@
+body{
+    background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2017-02/11/0/enhanced/buzzfeed-prod-web-09/anigif_enhanced-16830-1486791894-2.gif);
+    align-content: center;
+}
+
+h1{
+    background-color: black;
+    color: aliceblue;
+}
+form{
+    background-color: black;
+    color: aliceblue;
+}
+
+input{
+    align-content: center;
+}
