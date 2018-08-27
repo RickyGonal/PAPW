@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suma de Ángulos Internos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script><!--Agregar script externo-->
+</head>
+<body onload="CortoCircuito()">
+    <h1>Suma de ángulos Internos</h1>
+    <p>Instrucciones: calcula la suma de los ángulos internos S de un polígono de n lados: S = 180 (n - 2)</p>
+    <form>
+        <input type="number" id="ang" min="3">
+        <input type="button" onclick="SumAngInt()" value="SumAngInt">
+    </form>
+        <input type="text" id="angVar">
+        <input type="button" onclick="SumAngIntVar(angVar)" value="SumAngIntVar">
+    <p id="resultado">Resultado</p>
+
+    <script>
+    function HolaAdios(){
+        /*
+        console.log("Hola")
+        alert("adios")*/
+    }
+
+    function SumAngInt(){
+        var n = document.getElementById("ang").value;
+        var resultado = 180 * (n-2);
+        var e = document.getElementById("resultado");
+        e.innerHTML = resultado;
+    }
+
+    function SumAngIntVar(n){
+        n = n.value;
+        console.log(n);
+        var resultado = 180 * (n-2);
+        var e = document.getElementById("resultado");
+        e.innerHTML = resultado;
+    }
+
+    function CortoCircuito(){
+        var u = { //JSON
+            nombre: "Ricardo",
+            edad: 31,
+            GetName:function(){
+                return this.nombre;
+            }
+        }
+
+        var name = u && u.GetName();
+        name = name || "Pepito";
+
+        alert(name);
+    }
+    </script>
+</body>
+</html>

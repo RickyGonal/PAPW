@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suma de Números Naturales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Style.css" />
+    <script src="main.js"></script><!--Agregar script externo-->
+</head>
+<body>
+    <h1>Suma de Números Naturales</h1>
+    <p>Instrucciones: calcula la suma S de los primeros números naturales consecutivos: S = (n (n + 1))/2</p>
+    <form>
+        <input type="number" id="ang" min="3">
+        <input type="button" onclick="SumAngInt()" value="Suma de Naturales">
+    </form>
+        <input type="text" id="angVar">
+        <input type="button" onclick="SumAngIntVar(angVar)" value="Suma de Naturales">
+    <p id="resultado">Resultado</p>
+
+    <script>
+    function HolaAdios(){
+        /*
+        console.log("Hola")
+        alert("adios")*/
+    }
+
+   function SumAngInt(){
+        var n = document.getElementById("ang").value;
+        var resultado = (n*(+n+1))/2;
+        var e = document.getElementById("resultado");
+        e.innerHTML = resultado;
+    }
+
+    function SumAngIntVar(n){
+        n = n.value;
+        console.log(n);
+        var resultado = (n*(+n+1))/2;
+        var e = document.getElementById("resultado");
+        e.innerHTML = resultado;
+    }
+    </script>
+</body>
+</html>
