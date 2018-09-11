@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <style>
+          body{
+              background-image: url("https://storageos.com/wp-content/uploads/2016/09/storage-servers1.jpg")
+          }
+        </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/examples/sign-in/signin.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/95/3d/b3/953db3147cc28220fcca86e94c34b323.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Style.css">
+    <title>BUY ZONE</title>
+  </head>
+  <body class="text-center">
+    <div id="enter">
+        <div id="signuppart">
+        <form id="signup" action="principal.html">
+                            <h1 class="h3 mb-3 font-weight-normal">Nuevo Usuario</h1>
+
+                        <div id="imgsign">
+                        <img src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-fabricante-de-avatar-masculino.jpg" id="signavatar"><br><br>
+                        <input class="file-upload-input"  type="file" onchange="" accept="image/*" required="true">
+                        </div>
+
+                        <div id="datasign">
+                        <label for="inputName" class="sr-only">Name</label>
+                        <input type="text" id="inputName" class="form-control" placeholder="Nombre" required="true" autofocus="">
+                        <label for="inputLastName" class="sr-only">Apellido</label>
+                        <input type="text" id="inputLastName" class="form-control" placeholder="Apellido" required="true" autofocus="">
+                        <label for="inputUserName" class="sr-only">Nombre de Ususario</label>
+                        <input type="text" id="inputUserName" class="form-control" placeholder="Nombre de Usuario" required="true" autofocus="" pattern="[A-Za-z].{6,30}">
+                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Direccion E-mail" required="true" autofocus="">
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="true" pattern="[A-Za-z].{8,30}">
+                        <label for="inputAddress" class="sr-only">Dirección</label>
+                        <input type="text" id="inputAddress" class="form-control" placeholder="Direccion" autofocus="" pattern="[a-z].{10,100}">
+                        <label for="inputPhone" class="sr-only">Telefono</label>
+                        <input type="text" id="inputPhone" class="form-control" placeholder="Numero de Telefono" autofocus="" pattern="[0-9].{9,9}"><br>
+                        <button class="btn btn-lg btn-secondary btn-block" id="login" type="submit">Registrarse</button>
+                        </div>
+                        
+                    </form>
+        </div>
+      <div id="loginpart">
+        <form class="form-signin" id="login" action="principal.html">
+            <a href="LOGIN.html"><img src="https://i.pinimg.com/originals/95/3d/b3/953db3147cc28220fcca86e94c34b323.png" width="72" height="72"></a>
+            <h1 class="h3 mb-3 font-weight-normal">Ingresar</h1>
+            <label for="inputEmail" class="sr-only">Correo</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Direccion E-mail" required="true" autofocus="">
+            <label for="inputPassword" class="sr-only">Contraseña</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="true" pattern="[A-Za-z].{8,30}">
+            <label for="inputRemember" class="sr-only">Recuerdame</label>
+            <input type="checkbox" id="inputRemember"> Recuerdame<br><br>
+            <button class="btn btn-lg btn-primary btn-block" id="login" type="submit">Ingresar</button>
+        </form>
+    </div>
+</div>
+    
+    <!--JAVASCRIPT lenguage de programación para la web -->
+    <!--HOME, LOG-IN, SIGN-UP, Alta de producto, Carrito, -->
+
+    <script type="text/javascript">
+    $(function(){
+        $("#login").onclick(function(){
+            $("#inputEmail").onvalid = function(e){
+                e.target.setCustomValidity('');
+                if(!e.target.Validity.Valid){
+                    e.target.setCustomValidity('Este campo es obligatorio');
+                }
+            }
+        })
+    })
+    
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
